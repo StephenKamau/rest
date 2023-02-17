@@ -1,0 +1,17 @@
+package com.tkl.rest.models;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Todo {
+    private int id;
+    private String todo;
+    private boolean completed;
+}
